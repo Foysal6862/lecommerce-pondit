@@ -1,76 +1,9 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE html>
-<html>
-<head>
-<title>Big store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Single :: w3layouts</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta property="og:title" content="Vide" />
-<meta name="keywords" content="Big store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<link href="{{ asset('') }}asset/frontend/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- Custom Theme files -->
-<link href="{{ asset('') }}asset/frontend/css/style.css" rel='stylesheet' type='text/css' />
-<!-- js -->
-   <script src="{{ asset('') }}asset/frontend/js/jquery-1.11.1.min.js"></script>
-<!-- //js -->
-<!-- start-smoth-scrolling -->
-<script type="text/javascript" src="{{ asset('') }}asset/frontend/js/move-top.js"></script>
-<script type="text/javascript" src="{{ asset('') }}asset/frontend/js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- start-smoth-scrolling -->
-<link href="{{ asset('') }}asset/frontend/css/font-awesome.css" rel="stylesheet"> 
-<link href='{{ asset('') }}asset/frontend/fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<link href='{{ asset('') }}asset/frontend/fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
-<!--- start-rate---->
-<script src="{{ asset('') }}asset/frontend/js/jstarbox.js"></script>
-	<link rel="stylesheet" href="{{ asset('') }}asset/frontend/css/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
-		<script type="text/javascript">
-			jQuery(function() {
-			jQuery('.starbox').each(function() {
-				var starbox = jQuery(this);
-					starbox.starbox({
-					average: starbox.attr('data-start-value'),
-					changeable: starbox.hasClass('unchangeable') ? false : starbox.hasClass('clickonce') ? 'once' : true,
-					ghosting: starbox.hasClass('ghosting'),
-					autoUpdateAverage: starbox.hasClass('autoupdate'),
-					buttons: starbox.hasClass('smooth') ? false : starbox.attr('data-button-count') || 5,
-					stars: starbox.attr('data-star-count') || 5
-					}).bind('starbox-value-changed', function(event, value) {
-					if(starbox.hasClass('random')) {
-					var val = Math.random();
-					starbox.next().text(' '+val);
-					return val;
-					} 
-				})
-			});
-		});
-		</script>
-<!---//End-rate---->
+@extends('layouts.master')
 
-</head>
-<body>
-	@include('partials.offer')
-	@include('partials.header')
+@section('title', 'Single')
 
-  <!---->
- <!--banner-->
+@section('content')
+
 <div class="banner-top">
 	<div class="container">
 		<h3 >Lorem</h3>
@@ -83,7 +16,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						<div class="single-top-main">
 	   		<div class="col-md-5 single-top">
 	   		<div class="single-w3agile">
-							
+
 <div id="picture-frame">
 			<img src="{{ asset('') }}asset/frontend/images/si.jpg" data-src="{{ asset('') }}asset/frontend/images/si-1.jpg" alt="" class="img-responsive"/>
 		</div>
@@ -95,16 +28,16 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				});
 			});
 		</script>
-		
-		
-		
+
+
+
 			</div>
 			</div>
 			<div class="col-md-7 single-top-left ">
 								<div class="single-right">
 				<h3>Wheat</h3>
-				
-					
+
+
 				 <div class="pr-single">
 				  <p class="reduced "><del>$10.00</del>$5.00</p>
 				</div>
@@ -112,7 +45,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="starbox small ghosting"> </div>
 				</div>
 				<p class="in-pa"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable. </p>
-			   	
+
 				<ul class="social-top">
 					<li><a href="#" class="icon facebook"><i class="fa fa-facebook" aria-hidden="true"></i><span></span></a></li>
 					<li><a href="#" class="icon twitter"><i class="fa fa-twitter" aria-hidden="true"></i><span></span></a></li>
@@ -122,18 +55,18 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<div class="add add-3">
 										   <button class="btn btn-danger my-cart-btn my-cart-b" data-id="1" data-name="Wheat" data-summary="summary 1" data-price="6.00" data-quantity="1" data-image="images/si.jpg">Add to Cart</button>
 										</div>
-				
-				 
-			   
+
+
+
 			<div class="clearfix"> </div>
 			</div>
-		 
+
 
 			</div>
 		   <div class="clearfix"> </div>
-	   </div>	
-				 
-				
+	   </div>
+
+
 	</div>
 </div>
 		<!---->
@@ -148,8 +81,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					</div>
 			</div>
 						<div class=" con-w3l wthree-of">
-							
-						
+
+
 							<div class="col-md-3 pro-1">
 								<div class="col-m">
 									<a href="#" data-toggle="modal" data-target="#myModal5" class="offer-img">
@@ -158,7 +91,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</a>
 									<div class="mid-1">
 										<div class="women">
-											<h6><a href="single.html">Lays</a>(100 g)</h6>							
+											<h6><a href="single.html">Lays</a>(100 g)</h6>
 										</div>
 										<div class="mid-2">
 											<p ><label>$1.00</label><em class="item_price">$0.70</em></p>
@@ -181,7 +114,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</a>
 									<div class="mid-1">
 										<div class="women">
-											<h6><a href="single.html">Kurkure</a>(100 g)</h6>							
+											<h6><a href="single.html">Kurkure</a>(100 g)</h6>
 										</div>
 										<div class="mid-2">
 											<p ><label>$1.00</label><em class="item_price">$0.70</em></p>
@@ -204,7 +137,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</a>
 									<div class="mid-1">
 										<div class="women">
-											<h6><a href="single.html">Popcorn</a>(250 g)</h6>							
+											<h6><a href="single.html">Popcorn</a>(250 g)</h6>
 										</div>
 										<div class="mid-2">
 											<p ><label>$2.00</label><em class="item_price">$1.00</em></p>
@@ -227,7 +160,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</a>
 									<div class="mid-1">
 										<div class="women">
-											<h6><a href="single.html"> Nuts</a>(250 g)</h6>							
+											<h6><a href="single.html"> Nuts</a>(250 g)</h6>
 										</div>
 										<div class="mid-2">
 											<p ><label>$4.00</label><em class="item_price">$3.50</em></p>
@@ -242,7 +175,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</div>
 								</div>
 							</div>
-							
+
 							<div class="col-md-3 pro-1">
 								<div class="col-m">
 								<a href="#" data-toggle="modal" data-target="#myModal9" class="offer-img">
@@ -251,7 +184,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</a>
 									<div class="mid-1">
 										<div class="women">
-											<h6><a href="single.html">Banana</a>(6 pcs)</h6>							
+											<h6><a href="single.html">Banana</a>(6 pcs)</h6>
 										</div>
 										<div class="mid-2">
 											<p ><label>$2.00</label><em class="item_price">$1.50</em></p>
@@ -274,7 +207,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</a>
 									<div class="mid-1">
 										<div class="women">
-											<h6><a href="single.html">Onion</a>(1 kg)</h6>							
+											<h6><a href="single.html">Onion</a>(1 kg)</h6>
 										</div>
 										<div class="mid-2">
 											<p ><label>$1.00</label><em class="item_price">$0.70</em></p>
@@ -297,7 +230,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</a>
 									<div class="mid-1">
 										<div class="women">
-											<h6><a href="single.html"> Bitter Gourd</a>(1 kg)</h6>							
+											<h6><a href="single.html"> Bitter Gourd</a>(1 kg)</h6>
 										</div>
 										<div class="mid-2">
 											<p ><label>$2.00</label><em class="item_price">$1.00</em></p>
@@ -320,7 +253,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</a>
 									<div class="mid-1">
 										<div class="women">
-											<h6><a href="single.html">Apples</a>(1 kg)</h6>							
+											<h6><a href="single.html">Apples</a>(1 kg)</h6>
 										</div>
 										<div class="mid-2">
 											<p ><label>$4.00</label><em class="item_price">$3.50</em></p>
@@ -335,7 +268,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</div>
 								</div>
 							</div>
-							
+
 							<div class="col-md-3 pro-1">
 								<div class="col-m">
 								<a href="#" data-toggle="modal" data-target="#myModal13" class="offer-img">
@@ -344,7 +277,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</a>
 									<div class="mid-1">
 										<div class="women">
-											<h6><a href="single.html">Honey</a>(500g)</h6>							
+											<h6><a href="single.html">Honey</a>(500g)</h6>
 										</div>
 										<div class="mid-2">
 											<p ><label>$7.00</label><em class="item_price">$6.00</em></p>
@@ -367,7 +300,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</a>
 									<div class="mid-1">
 										<div class="women">
-											<h6><a href="single.html">Chocos</a>(250g)</h6>							
+											<h6><a href="single.html">Chocos</a>(250g)</h6>
 										</div>
 										<div class="mid-2">
 											<p ><label>$5.00</label><em class="item_price">$4.50</em></p>
@@ -390,7 +323,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</a>
 									<div class="mid-1">
 										<div class="women">
-											<h6><a href="single.html">Oats</a>(1 kg)</h6>							
+											<h6><a href="single.html">Oats</a>(1 kg)</h6>
 										</div>
 										<div class="mid-2">
 											<p ><label>$4.00</label><em class="item_price">$3.50</em></p>
@@ -413,7 +346,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									</a>
 									<div class="mid-1">
 										<div class="women">
-											<h6><a href="single.html">Bread</a>(500 g)</h6>							
+											<h6><a href="single.html">Bread</a>(500 g)</h6>
 										</div>
 										<div class="mid-2">
 											<p ><label>$1.00</label><em class="item_price">$0.80</em></p>
@@ -432,12 +365,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						 </div>
 					</div>
 				</div>
-<!--footer-->
 
-@include('partials.footer')
-
-
-<!-- //footer-->
 
 <!-- smooth scrolling -->
 	<script type="text/javascript">
@@ -447,9 +375,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			containerID: 'toTop', // fading element id
 			containerHoverID: 'toTopHover', // fading element hover id
 			scrollSpeed: 1200,
-			easingType: 'linear' 
+			easingType: 'linear'
 			};
-		*/								
+		*/
 		$().UItoTop({ easingType: 'easeOutQuart' });
 		});
 	</script>
@@ -505,7 +433,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						</div>
 						<div class="modal-body modal-spa">
 								<div class="col-md-5 span-2">
@@ -518,7 +446,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									<p class="in-para"> There are many variations of passages of Lorem Ipsum.</p>
 									<div class="price_single">
 									  <span class="reducedfrom "><del>$1.00</del>$0.70</span>
-									
+
 									 <div class="clearfix"></div>
 									</div>
 									<h4 class="quick">Quick Overview:</h4>
@@ -537,7 +465,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						</div>
 						<div class="modal-body modal-spa">
 								<div class="col-md-5 span-2">
@@ -550,7 +478,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									<p class="in-para"> There are many variations of passages of Lorem Ipsum.</p>
 									<div class="price_single">
 									  <span class="reducedfrom "><del>$1.00</del>$0.70</span>
-									
+
 									 <div class="clearfix"></div>
 									</div>
 									<h4 class="quick">Quick Overview:</h4>
@@ -569,7 +497,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						</div>
 						<div class="modal-body modal-spa">
 								<div class="col-md-5 span-2">
@@ -582,7 +510,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									<p class="in-para"> There are many variations of passages of Lorem Ipsum.</p>
 									<div class="price_single">
 									  <span class="reducedfrom "><del>$2.00</del>$1.00</span>
-									
+
 									 <div class="clearfix"></div>
 									</div>
 									<h4 class="quick">Quick Overview:</h4>
@@ -601,7 +529,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						</div>
 						<div class="modal-body modal-spa">
 								<div class="col-md-5 span-2">
@@ -614,7 +542,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									<p class="in-para"> There are many variations of passages of Lorem Ipsum.</p>
 									<div class="price_single">
 									  <span class="reducedfrom "><del>$4.00</del>$3.50</span>
-									
+
 									 <div class="clearfix"></div>
 									</div>
 									<h4 class="quick">Quick Overview:</h4>
@@ -633,7 +561,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						</div>
 						<div class="modal-body modal-spa">
 								<div class="col-md-5 span-2">
@@ -646,7 +574,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									<p class="in-para"> There are many variations of passages of Lorem Ipsum.</p>
 									<div class="price_single">
 									  <span class="reducedfrom "><del>$2.00</del>$1.50</span>
-									
+
 									 <div class="clearfix"></div>
 									</div>
 									<h4 class="quick">Quick Overview:</h4>
@@ -665,7 +593,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						</div>
 						<div class="modal-body modal-spa">
 								<div class="col-md-5 span-2">
@@ -678,7 +606,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									<p class="in-para"> There are many variations of passages of Lorem Ipsum.</p>
 									<div class="price_single">
 									  <span class="reducedfrom "><del>$1.00</del>$0.70</span>
-									
+
 									 <div class="clearfix"></div>
 									</div>
 									<h4 class="quick">Quick Overview:</h4>
@@ -697,7 +625,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						</div>
 						<div class="modal-body modal-spa">
 								<div class="col-md-5 span-2">
@@ -710,7 +638,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									<p class="in-para"> There are many variations of passages of Lorem Ipsum.</p>
 									<div class="price_single">
 									  <span class="reducedfrom "><del>$2.00</del>$1.00</span>
-									
+
 									 <div class="clearfix"></div>
 									</div>
 									<h4 class="quick">Quick Overview:</h4>
@@ -729,7 +657,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						</div>
 						<div class="modal-body modal-spa">
 								<div class="col-md-5 span-2">
@@ -742,7 +670,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									<p class="in-para"> There are many variations of passages of Lorem Ipsum.</p>
 									<div class="price_single">
 									  <span class="reducedfrom "><del>$4.00</del>$3.50</span>
-									
+
 									 <div class="clearfix"></div>
 									</div>
 									<h4 class="quick">Quick Overview:</h4>
@@ -761,7 +689,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						</div>
 						<div class="modal-body modal-spa">
 								<div class="col-md-5 span-2">
@@ -774,7 +702,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									<p class="in-para"> There are many variations of passages of Lorem Ipsum.</p>
 									<div class="price_single">
 									  <span class="reducedfrom "><del>$7.00</del>$6.00</span>
-									
+
 									 <div class="clearfix"></div>
 									</div>
 									<h4 class="quick">Quick Overview:</h4>
@@ -793,7 +721,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						</div>
 						<div class="modal-body modal-spa">
 								<div class="col-md-5 span-2">
@@ -806,7 +734,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									<p class="in-para"> There are many variations of passages of Lorem Ipsum.</p>
 									<div class="price_single">
 									  <span class="reducedfrom "><del>$5.00</del>$4.50</span>
-									
+
 									 <div class="clearfix"></div>
 									</div>
 									<h4 class="quick">Quick Overview:</h4>
@@ -825,7 +753,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						</div>
 						<div class="modal-body modal-spa">
 								<div class="col-md-5 span-2">
@@ -838,7 +766,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									<p class="in-para"> There are many variations of passages of Lorem Ipsum.</p>
 									<div class="price_single">
 									  <span class="reducedfrom "><del>$4.00</del>$3.50</span>
-									
+
 									 <div class="clearfix"></div>
 									</div>
 									<h4 class="quick">Quick Overview:</h4>
@@ -857,7 +785,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						</div>
 						<div class="modal-body modal-spa">
 								<div class="col-md-5 span-2">
@@ -870,7 +798,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 									<p class="in-para"> There are many variations of passages of Lorem Ipsum.</p>
 									<div class="price_single">
 									  <span class="reducedfrom "><del>$1.00</del>$0.80</span>
-									
+
 									 <div class="clearfix"></div>
 									</div>
 									<h4 class="quick">Quick Overview:</h4>
@@ -884,5 +812,4 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						</div>
 					</div>
 				</div>
-</body>
-</html>
+@endsection

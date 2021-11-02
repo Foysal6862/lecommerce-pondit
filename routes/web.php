@@ -35,9 +35,7 @@ Route::get('/shipping', function () {
     return view('e-commerce.shipping.shipping');
 });
 
-Route::get('/single', function () {
-    return view('e-commerce.single.single');
-});
+Route::get('/single', 'Frontend\SingleController@index');
 
 Route::get('/terms', function () {
     return view('e-commerce.terms.terms');
