@@ -1,0 +1,1 @@
+<a href="{{ url('offer') }}"><img src="{{ asset('') }}asset/frontend/images/download.png" class="img-head" alt=""></a>
